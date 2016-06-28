@@ -1,12 +1,26 @@
 #!/bin/bash
 # Find the number of records and total length of a fasta file
 
-## USAGE ##
-# fasta_characterize.sh <your_file.fasta> <min_length>
-
 # User Input 
 INPUT="$1"
 LENGTH="$2"
+
+# define usage function
+usage(){
+    echo "Usage: $0 <your_assembly.fasta> <min_length>"
+    exit 1
+}
+
+## USAGE ##
+# fasta_characterize.sh <your_file.fasta> <min_length>
+
+
+# Invoke usage function
+# if [ -z "$1" ]
+# then
+#    usage()
+#fi
+
 
 # Do not change
 TRIMMED_INPUT="$INPUT"_minlength500.fa
