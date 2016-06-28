@@ -1,5 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
 # Find the number of records and total length of a fasta file
 
 ## USAGE ##
@@ -8,11 +7,6 @@
 # User Input 
 INPUT="$1"
 LENGTH="$2"
-=======
-# Set environment variable 
-INPUT=$1
-LENGTH="500"
->>>>>>> 0424ea61039a3e71c4cde33dec33e2459e5992ce
 
 # Begin
 echo "Processing $INPUT"
