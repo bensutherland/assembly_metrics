@@ -7,8 +7,8 @@ Scripts found withint the directory `01_scripts/00_utility_scripts` originate fr
 
 Some scripts require biopython.
 
-### Simple Calculations on fasta ###
-`01_scripts/01_fasta_summarize.sh <assembly_name> <minimum_length>`   
+### 01 Simple Calculations on fasta ###
+`01_scripts/01_fasta_summarize.sh <assembly.fasta> <minimum_length>`   
 
 Where minimum length is a number that is the smallest length that you would like your assembly to contain.   
 
@@ -16,3 +16,10 @@ Provides for the full assembly and the limited length assembly:
 * number of records
 * total length
 * n50 
+
+### 02 Markers against genome ###
+`01_scripts/02_fasta_map.sh <query.fasta> <assembly.fasta>`
+
+Then use a utility script to get statistics from the .bam file
+`01_scripts/00_utility_scripts/bam_assess.sh 03_mapped/<output.bam>`
+
