@@ -14,12 +14,12 @@ TARGETNAME=$(basename "$TARGET")
 
 #Variables
 OUTPUT="$QUERYNAME"_"$TARGETNAME"
+ASSEMBLY_FOLDER="02_assemblies"
+
 
 echo $OUTPUT
 
 # Map
-bwa mem -t 4 $TARGET $QUERY > "$OUTPUT".sam 
-samtools view -Sb -F 4 "$OUTPUT".sam > "$OUTPUT".bam 
+bwa mem -t 4 $TARGET $QUERY > $ASSEMBLY_FOLDER/"$OUTPUT".sam 
+samtools view -Sb -F 4 $ASSEMBLY_FOLDER/"$OUTPUT".sam > $ASSEMBLY_FOLDER/"$OUTPUT".bam 
 
-# Move to appropriate folder
-mv *.sam *.bam 03_mapped/
