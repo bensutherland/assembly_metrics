@@ -26,5 +26,7 @@ First use bwa to index your assembly.fasta
 `01_scripts/02_fasta_map.sh <query.fasta> <assembly.fasta>`
 
 Then use a utility script to get statistics from the .bam file
-`01_scripts/00_utility_scripts/bam_assess.sh 03_mapped/<output.bam>`
+`01_scripts/00_utility_scripts/bam_assess.sh 02_assemblies/<output.bam>`
 
+### 3. BUSCO evaluation ###
+To be added.
