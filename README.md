@@ -5,8 +5,10 @@ Assess the results of a genome assembly through various metrics (e.g. N50, total
 
 Scripts found withint the directory `01_scripts/00_utility_scripts` originate from various sources, and these are attributed within each of the scripts themselves.
 
+Some scripts require biopython.
+
 ### Simple Calculations on fasta ###
-`01_scripts/fasta_summarize.sh <assembly_name> <minimum_length>`   
+`01_scripts/01_fasta_summarize.sh <assembly_name> <minimum_length>`   
 
 Where minimum length is a number that is the smallest length that you would like your assembly to contain.   
 
