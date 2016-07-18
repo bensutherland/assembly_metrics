@@ -8,3 +8,10 @@
 *.sa
 *.sam
 *.bam
+*.nhr
+*.nin
+*.nsq
+*_tblastn
+error.txt
+output.txt
+temp
