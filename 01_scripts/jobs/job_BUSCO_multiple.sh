@@ -11,7 +11,7 @@
 source activate python3
 
 # Set environment variables
-BUSCO="/home/bensuth/programs/BUSCO_v1.2/BUSCO_v1.2.py"
+BUSCO="/home/bensuth/programs/BUSCO_v1.22/BUSCO_v1.22.py"
 LINEAGE="/home/bensuth/02_sfon_genome/10_assess_assemblies/metazoa"
 ASSEMBLY_FOLDER="02_assemblies"
 
@@ -22,7 +22,7 @@ NUM_CORES=10
 cd 03_busco_results
 
 # Perform BUSCO analysis on each assembly in 02_assemblies
-ls -1 ./../$ASSEMBLY_FOLDER/*.fa |
+ls -1 ./../$ASSEMBLY_FOLDER/*.fasta |
     sort -u |
     while read i
     do

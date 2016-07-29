@@ -12,6 +12,6 @@
 *.nin
 *.nsq
 *_tblastn
-error.txt
-output.txt
+*error.txt
+*output.txt
 temp
