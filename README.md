@@ -10,6 +10,7 @@ Requirements:
 `BUSCO`
 `bwa`
 `samtools`
+`python3`
 
 ### 1. Simple Calculations on fasta ###
 `01_scripts/01_fasta_summarize.sh <assembly.fasta> <minimum_length>`   
