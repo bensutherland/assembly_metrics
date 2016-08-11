@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH -o /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/output.txt
-#SBATCH -e /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/error.txt
+#SBATCH -o /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/BUSCO_output.txt
+#SBATCH -e /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/BUSCO_error.txt
 #SBATCH -D /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/ 
 #SBATCH -J BUSCO 
-#SBATCH --cpus-per-task=10
+#SBATCH --cpus-per-task=9
 #SBATCH --time=60:00:00
 #SBATCH --mem=20000
 
@@ -16,7 +16,7 @@ LINEAGE="/home/bensuth/02_sfon_genome/10_assess_assemblies/metazoa"
 ASSEMBLY_FOLDER="02_assemblies"
 
 # Adjustable variables
-NUM_CORES=10
+NUM_CORES=9
 
 # Move into BUSCO results folder 
 cd 03_busco_results
