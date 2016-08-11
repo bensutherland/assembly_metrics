@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH -o /home/bensuth/10_whitefish/assembly_metrics/output.txt
-#SBATCH -e /home/bensuth/10_whitefish/assembly_metrics/error.txt
-#SBATCH -D /home/bensuth/10_whitefish/assembly_metrics/ 
+#SBATCH -o /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/bwa_output.txt
+#SBATCH -e /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/bwa_error.txt
+#SBATCH -D /home/bensuth/02_sfon_genome/10_assess_assemblies/assembly_metrics/
 #SBATCH -J bwa
 #SBATCH --cpus-per-task=1
 #SBATCH --time=60:00:00
