@@ -7,17 +7,14 @@ Scripts found within the directory `01_scripts/00_utility_scripts` originate fro
 Run scripts from the main directory of the repo.    
 
 Requirements:
-`biopython`
-`BUSCO`
-`bwa`
-`samtools`
-`python3`
+`biopython`    
+`BUSCO`    
+`bwa`    
+`samtools`    
+`python3`    
 
 
 ### 0. Prelim Options ###
-It is possible to reduce your fasta file to only contigs > 500 using the utility script as follows:    
-`./01_scripts/00_utility_scripts/fasta_minlength.pl 500 my.fasta > my_minl500.fasta`   
-
 You can confirm the smallest contig size using     
 `./01_scripts/00_utility_scripts/fasta_min_len.py my_minl500.fasta`
 
