@@ -1,7 +1,8 @@
 # Assembly Metrics
 Assess a genome assembly using various metrics (e.g. N50, total length, BUSCO)    
 
-Scripts found within the directory `01_scripts/00_utility_scripts` originate from various sources, and these are attributed within each of the scripts themselves. 
+Scripts found within the directory `01_scripts/00_utility_scripts` originate from various sources, and these are attributed within each of the scripts themselves. Many are from Eric Normandeau's scripts repo:  https://github.com/enormandeau/Scripts   
+
 
 Run scripts from the main directory of the repo.    
 
@@ -11,6 +12,15 @@ Requirements:
 `bwa`
 `samtools`
 `python3`
+
+
+### 0. Prelim Options ###
+It is possible to reduce your fasta file to only contigs > 500 using the utility script as follows:    
+`./01_scripts/00_utility_scripts/fasta_minlength.pl 500 my.fasta > my_minl500.fasta`   
+
+You can confirm the smallest contig size using     
+`./01_scripts/00_utility_scripts/fasta_min_len.py my_minl500.fasta`
+
 
 ### 1. Simple Calculations on fasta ###
 `01_scripts/01_fasta_summarize.sh <assembly.fasta> <minimum_length>`   
