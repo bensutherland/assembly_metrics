@@ -3,6 +3,8 @@
 # Requires samtools
 # The linkage group section requires that your input fasta is a map in the MapComp format
 
+module load samtools/1.3
+
 ## USAGE ##
 # bam_assess.sh <your_file.bam>
 

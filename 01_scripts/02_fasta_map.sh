@@ -2,6 +2,10 @@
 # Map a fasta file against a reference 
 # Requires bwa and samtools
 
+# Load modules
+module load samtools/1.3
+module load bwa/0.7.13
+
 ## USAGE ##
 # fasta_map.sh <your_query.fasta> <your_target.fasta>
 
