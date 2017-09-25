@@ -1,5 +1,6 @@
 *~
 *.fasta
+*.fq
 *.fa
 *.amb
 *.ann
@@ -17,3 +18,4 @@
 *temp
 *.swp
 *.bt2
+
