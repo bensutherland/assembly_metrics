@@ -15,6 +15,9 @@ OUTPUT_FOLDER=$(basename $REFERENCE)
 LOG_FILE=$OUTPUT_FOLDER"_log.txt"
 echo $REFERENCE 2>&1 | tee -a $LOG_FILE 
 
+# Make output folder specific to reference
+mkdir $RESULT_FOLDER/$OUTPUT_FOLDER
+
 # Map reads
 ls -1 $DATA_FOLDER/*.fq |
 	sort -u |
@@ -33,7 +36,6 @@ ls -1 $DATA_FOLDER/*.fq |
 
           # Clean up
           rm $i.bowtie2.sam
-          mkdir $RESULT_FOLDER/$OUTPUT_FOLDER
           mv $DATA_FOLDER/*.bam $RESULT_FOLDER/$OUTPUT_FOLDER
 done
 
