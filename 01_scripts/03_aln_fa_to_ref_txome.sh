@@ -4,14 +4,13 @@
 
 # Global variables
 DATA_FOLDER="00_input_files"
-REF_FOLDER="02_assemblies"
 REFERENCE="$1"
 RESULT_FOLDER="04_mapping_results"
 
 # User variables
 NUM_THREADS="10"
 
-# troubleshoot
+# Prepare other variables to be used 
 OUTPUT_FOLDER=$(basename $REFERENCE)
 LOG_FILE=$OUTPUT_FOLDER"_log.txt"
 echo $REFERENCE 2>&1 | tee -a $LOG_FILE 
