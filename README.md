@@ -53,7 +53,8 @@ This will result in multiple BUSCO directories for each fasta file found in your
 ### 4. Align fastq against metatranscriptome
 To assess a metatranscriptome, one approach is to take several individual fastq files and see how well they map against the assembly. 
 First index your metatranscriptome using bowtie2.   
-Then run the following script:    
+  
+Then run the following command, including the bt2_index_base as <your_assembly>:    
 `./01_scripts/03_aln_fa_to_ref_txome.sh 02_assemblies/your_assembly`   
-where <your_assembly> is the bt2_index_base
+  
 The output results will be accessible in `04_mapping_results`, both in .bam format saved under the name of the reference, as well as in log format.   
