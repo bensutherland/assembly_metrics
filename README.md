@@ -3,6 +3,7 @@ Assess a genome assembly using various metrics (e.g. N50, total length, BUSCO)
 
 Scripts found within the directory `01_scripts/00_utility_scripts` originate from various sources, and these are attributed within each of the scripts themselves. Many are from Eric Normandeau's scripts repo:  https://github.com/enormandeau/Scripts   
 
+**Warning**: this pipeline is provided "as is", without any warranty of any kind, express or implied.      
 
 Run scripts from the main directory of the repo.    
 
