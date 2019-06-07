@@ -7,7 +7,8 @@ Scripts found within the directory `01_scripts/00_utility_scripts` originate fro
 
 Run scripts from the main directory of the repo.    
 
-Requirements:
+#### Requirements: ####     
+`Unix environment`      
 `biopython`    
 `BUSCO`    
 `bwa`    
@@ -40,7 +41,9 @@ Then use a utility script to get statistics from the .bam file
 `01_scripts/00_utility_scripts/bam_assess.sh 02_assemblies/<output.bam>`
 
 ### 3. BUSCO evaluation ###
-Using the job submission file, BUSCO can be run on multiple assemblies all found within 02_assemblies/*.fasta    
+Currently only set up via a job submission script in batches, but can be adapted to single jobs from the script shown below. If it is of interest to adapt this to non-job submission, please let the author(s) know and it may be possible to include.    
+
+Using the job submission file, BUSCO can be run on multiple assemblies all found within `02_assemblies/*.fasta`    
 To set up on your own directory, customize the following in the SLURM job file:      
 * Set path to BUSCO python script    
 * Set path to BUSCO lineage folder    
@@ -51,8 +54,9 @@ After customizing to your directory, submit the job script
 
 This will result in multiple BUSCO directories for each fasta file found in your 02_assemblies folder
 
-### 4. Align fastq against metatranscriptome
-To assess a metatranscriptome, one approach is to take several individual fastq files and see how well they map against the assembly. 
+## Evaluate a metatranscriptome ##
+### 1. Align fastq against metatranscriptome ###
+To assess the quality of a metatranscriptome, one approach is to take several individual fastq files and see how well they map against the assembly. 
 First index your metatranscriptome using bowtie2.   
   
 Then run the following command, including the bt2_index_base as <your_assembly>:    
